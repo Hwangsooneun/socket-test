@@ -1,0 +1,8 @@
+version: 0.0
+os: ubunto
+
+hooks:
+  Beforeinstall:
+    - npm install
+  ApplicationStart:
+    - sudo npm start
