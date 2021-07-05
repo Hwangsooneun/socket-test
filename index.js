@@ -11,7 +11,7 @@ const server = require('http').Server(app)
 // })
 // const { v4: uuidV4 } = require('uuid')
 
-const PORT = 3000;
+const PORT = 80;
 
 
 app.use(cors({
