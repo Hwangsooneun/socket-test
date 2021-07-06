@@ -15,4 +15,5 @@ export NVM_DIR="$HOME/.nvm"
 npm install
 
 #start our node app in the background
+pm2 delete index.js
 authbind --deep pm2 start index.js
