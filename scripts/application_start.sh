@@ -13,6 +13,14 @@ export NVM_DIR="$HOME/.nvm"
 
 #install node modules
 npm install
+npm install pm2 -g
+sudo apt-get update
+sudo apt-get install authbind
+sudo touch /etc/authbind/byport/80
+sudo chown ubuntu /etc/authbind/byport/80
+sudo chmod 755 /etc/authbind/byport/80
+authbind --deep pm2 update
+pm2 delete index.js
 
 
 #start our node app in the background
