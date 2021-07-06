@@ -22,7 +22,7 @@ app.use(cors({
 app.use(express.json())
 
 app.get('/', (req, res) => {
-  res.status(200).send('CI/CD성공!2!!!!!')
+  res.status(200).send('CI/CD성공!2!32!!!!')
   console.log(`방금 사이트에 유저 접속함`)
 })
 
