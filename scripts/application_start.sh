@@ -14,7 +14,6 @@ sudo touch /etc/authbind/byport/80
 sudo chown ubuntu /etc/authbind/byport/80
 sudo chmod 755 /etc/authbind/byport/80
 authbind --deep pm2 update
-pm2 delete index.js
 
 
 #start our node app in the background(pm2)
