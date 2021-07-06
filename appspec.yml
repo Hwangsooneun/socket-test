@@ -4,8 +4,8 @@ files:
   - source: /
     destination: /home/ubuntu/server
 hooks:
-  BeforeInstall:
-    - location: scripts/before_install.sh
+  ApplicationStop:
+    - location: scripts/application_stop.sh
       timeout: 300
       runas: root
   ApplicationStart:
